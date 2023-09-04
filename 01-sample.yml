@@ -1,6 +1,6 @@
 - name: install nginx
   hosts: WEB
-  become: ture #key word for privilage escalations use sudo in terminal
+  become: true #key word for privilage escalations use sudo in terminal
   tasks:
     - name: install nginx
       ansible.builtin.yum:
