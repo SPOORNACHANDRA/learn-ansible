@@ -1,0 +1,7 @@
+- name: variable precedence
+  hosts: local host
+  connection: local
+  vars:
+    URL: play.google.com
+  roles:
+    - sample
