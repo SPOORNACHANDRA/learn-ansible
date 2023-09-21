@@ -4,4 +4,4 @@
   vars:
     URL: play.google.com
   roles:
-    - sample
+    - sample04-vars.yml
