@@ -1,21 +1,21 @@
-- name: install nginx
-  hosts: WEB
-  become: true #key word for privilage escalations use sudo in terminal
-  tasks:
-    - name: install nginx
-      ansible.builtin.yum:
-        name: nginx
-        state: installed
-
-
-    - name: start nginx
-      ansible.builtin.systemd:
-        name: nginx
-        state: started
-        enabled: yes
-#
 #- name: install nginx
 #  hosts: WEB
 #  become: true #key word for privilage escalations use sudo in terminal
-#  roles:
-#    - sample
+#  tasks:
+#    - name: install nginx
+#      ansible.builtin.yum:
+#        name: nginx
+#        state: installed
+#
+#
+#    - name: start nginx
+#      ansible.builtin.systemd:
+#        name: nginx
+#        state: started
+#        enabled: yes
+
+- name: install nginx
+  hosts: WEB
+  become: true #key word for privilage escalations use sudo in terminal
+  roles:
+    - sample
