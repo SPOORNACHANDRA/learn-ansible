@@ -14,8 +14,8 @@
         state: started
         enabled: yes
 
-#- name: install nginx
-#  hosts: WEB
-#  become: true #key word for privilage escalations use sudo in terminal
-#  roles:
-#    - sample
+- name: install nginx
+  hosts: WEB
+  become: true #key word for privilage escalations use sudo in terminal
+  roles:
+    - sample
