@@ -1,0 +1,7 @@
+- name: demo for aws parameter store
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: some value
+      ansible.builtin.debug:
+        msg: "{{ lookup('amazon.aws.aws_ssm', 'rds.dev.database_name', region= 'us-east-1') }}"
